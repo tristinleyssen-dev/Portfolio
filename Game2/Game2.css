@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #2a2a40;
+}
+
+#gameContainer {
+    position: relative; 
+    width: 510px;       
+    height: 510px;      
+}
+
+#mainGame {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(#1e1e2e, #2a2a40, #1e1e2e);
+    border: 5px solid #0ff;
+    border-radius: 12px;
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#gameButton {
+    height: 50px;
+    width: 50px;
+    background-color: #2a2a40;
+    border: 5px solid whitesmoke;
+    transition: border-color 0.5s ease;
+
+
+    position: absolute; 
+    top: 235px;   
+    left: 235px;  
+    transform: translate(-50%, -50%);
+    z-index: 10; 
+    transition: all 0.2s ease-out;
+}
+
+#points{
+    position: absolute;
+    top: -50px;
+    left: 20px;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 2px 2px 0px #000000,
+                 0px 0px 10px rgba(0,0,0,0.5); 
+}
+
+#lives{
+    position: absolute;
+    top: -50px;
+    right: 80px;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 2px 2px 0px #000000,
+                 0px 0px 10px rgba(0,0,0,0.5); 
+}
+
+
+
+#shop{
+    position: absolute;
+    top: 50px;
+    left: -380px;
+    scale: 7;
+}
+
+#shopUI{
+    position: absolute;
+    top: 200px;
+    right: 650px;
+
+    width: 300px;
+    padding: 15px;
+    border-radius: 16px;
+
+    background: #1e1f26;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 skins per row */
+    gap: 12px;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.shopSkin{
+    height: 80px;
+    width: 100%;
+    background: #2a2c36;
+    border-radius: 12px;
+    border: 5px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+}
+
